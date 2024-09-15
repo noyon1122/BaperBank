@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baper Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-6xl text-center mt-20">Let's have some Moneeey</h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-green-400 p-8 rounded-md">
+                    <h1 class="text-3xl mb-2">Deposite</h1>
+                    <h2 class="text-5xl">$<span id="deposite_text">00</span></h2>
+                </div>
+                <div class="bg-sky-400 p-8 rounded-md">
+                    <h1 class="text-3xl mb-2">Withdraw</h1>
+                    <h2 class="text-5xl">$<span id="withdraw_text">00</span></h2>
+                </div>
+                <div class="bg-orange-400 p-8 rounded-md">
+                    <h1 class="text-3xl mb-2">Balance</h1>
+                    <h2 class="text-5xl">$<span id="balance_text">1200</span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="mt-12"></section>
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
+                
+                <div class="bg-sky-400 p-8 rounded-md">
+                    <h1 class="text-3xl mb-2">Please Deposite</h1>
+                   <input id="depo_input" class="block mb-3 rounded-md w-9/12 px-2 text-black" type="text" placeholder="$ amount you want to deposite">
+                   <button id="deposite_btn" class="bg-blue-600 px-5 py-2 rounded-md">Deposite</button>
+                </div>
+                <div class="bg-orange-400 p-8 rounded-md">
+                    <h1 class="text-3xl mb-2">Please Withdraw</h1>
+                    <input id="withdraw_input" class="block mb-3 rounded-md w-9/12 px-2 text-black" type="text" placeholder="$ amount you want to withdraw">
+                    <button id="withdraw_btn" class="bg-blue-600 px-5 py-2 rounded-md">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/js/moneyCal.js"></script>
+</body>
+</html>
